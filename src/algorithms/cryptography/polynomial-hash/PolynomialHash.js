@@ -1,7 +1,7 @@
 const DEFAULT_BASE = 37;
 const DEFAULT_MODULUS = 101;
 
-export default class PolynomialHash {
+module.exports = class PolynomialHash {
   /**
    * @param {number} [base] - Base number that is used to create the polynomial.
    * @param {number} [modulus] - Modulus number that keeps the hash from overflowing.
@@ -86,4 +86,4 @@ export default class PolynomialHash {
 
     return charCode;
   }
-}
+};
